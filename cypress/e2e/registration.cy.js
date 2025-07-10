@@ -66,7 +66,6 @@ describe('Student Registration page', () => {
 
     cy.then(() => {
       cy.get('#submit').click();
-
       cy.get('#example-modal-sizes-title-lg')
         .should('contain.text', 'Thanks for submitting the form');
 
