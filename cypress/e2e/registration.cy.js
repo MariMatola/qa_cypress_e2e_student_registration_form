@@ -53,7 +53,7 @@ describe('Student Registration page', () => {
 
     cy.get('@gender').then((gender) => { testData.gender = gender; });
     cy.get('@dayOfBirth').then((day) => {
-      if (day.lenth < 2) {
+      if (day.length < 2) {
         testData.dayOfBirth = '0' + day;
       } else {
         testData.dayOfBirth = day;
